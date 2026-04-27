@@ -3,39 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Candace's Portfolio</title>
+  <title>Candace's Portfolio</title>
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
-<a class="navbar-brand fw-bold" href="#">Candace's Portfolio</a>    <div>
-      <a class="nav-link d-inline" href="about.html">About</a>
-      <a class="nav-link d-inline" href="projects.html">Projects</a>
-      <a class="nav-link d-inline" href="skills.html">Skills</a>
-      <a class="nav-link d-inline" href="contact.html">Contact</a>
+    <a class="navbar-brand fw-bold" href="#">Candace's Portfolio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </div>
 </nav>
 
-<!-- Home Section -->
 <div class="container text-center mt-5">
-  <h1>Hi, I'm Candace Gyimah</h1>
-  <p class="lead">An Information Systems student with a focus on Health IT</p>
-  <a href="projects.html" class="btn btn-primary">View My Work</a>
+  <h1>Hi, I'm Candace 👋</h1>
+  <p class="lead">Information Systems student focused on Health IT, system design, and user-centered solutions.</p>
+
+  <a href="projects.html" class="btn btn-primary mt-3">View My Work</a>
 </div>
-  <h2>What I Learned in IS 436</h2>
-<ul>
-  <li>Applied SDLC to system development</li>
-  <li>Built and deployed databases using Docker</li>
-  <li>Designed ER diagrams and system architecture</li>
-  <li>Used GitHub for version control and collaboration</li>
-</ul>
+
+<section class="bg-light p-4 rounded mt-5 container">
+  <h2 class="text-center mb-4">What I Learned in IS 436</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li>Applied the Software Development Life Cycle (SDLC) to real-world system design</li>
+        <li>Built and deployed databases using Docker and MySQL</li>
+        <li>Designed ER diagrams and system architecture models</li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <ul>
+        <li>Used GitHub for version control and team collaboration</li>
+        <li>Created wireframes to plan user interfaces</li>
+        <li>Applied UI/UX principles to improve usability and design</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center mt-5 mb-3">
+  <p>&copy; 2026 Candace | IS 436 Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
