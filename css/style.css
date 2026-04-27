@@ -1,22 +1,44 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
 }
 
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
 h1, h2 {
   font-weight: 600;
+  color: #333;
 }
 
-.navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
+/* Cards */
 .card {
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
 .btn-primary {
-  background-color: #f8c8dc;
+  background-color: #ff85a2;
   border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.btn-primary:hover {
+  background-color: #ff5c8a;
+}
+
+/* Section spacing */
+section {
+  margin-top: 50px;
 }
